@@ -145,3 +145,6 @@ gcp_submit_training:
 		--runtime-version=${RUNTIME_VERSION} \
 		--region ${REGION} \
 		--stream-logs
+
+run_api:
+	uvicorn api.fast:app --reload  # load web server with code autoreload
